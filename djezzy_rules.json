@@ -1,0 +1,72 @@
+{
+    "2G": [
+        {
+            "kpi": "CSSR_OPTIMUM",
+            "operator": ">",
+            "threshold": 98.0,
+            "count_threshold": 1000.0,
+            "count_column": "CS Traffic OPTIMUM Daily"
+        },
+        {
+            "kpi": "CDR_OPTIMUM",
+            "operator": "<",
+            "threshold": 1.0,
+            "count_threshold": 0
+        },
+        {
+            "kpi": "HSR_OPTIMUM",
+            "operator": ">=",
+            "threshold": 98,
+            "count_threshold": 100
+        }
+    ],
+    "3G": [
+        {
+            "kpi": "Call Drop Rate PS_OPTIMUM",
+            "operator": "<",
+            "threshold": 1.0,
+            "count_threshold": 100.0,
+            "count_column": "CDR_PS_Number_optimum"
+        },
+        {
+            "kpi": "RTWP_optimum(dBm)",
+            "operator": "<",
+            "threshold": -95.0,
+            "count_threshold": 75.0
+        },
+        {
+            "kpi": "Call Setup Success Rate CS_OPTIMUM",
+            "operator": ">=",
+            "threshold": 98.0,
+            "count_threshold": 0.0
+        },
+        {
+            "kpi": "Call Drop Rate CS_OPTIMUM",
+            "operator": "<",
+            "threshold": 1.0,
+            "count_threshold": 0.0
+        }
+    ],
+    "4G": [
+        {
+            "kpi": "LTE Setup Success Rate_OPTIMUM(%)",
+            "operator": ">",
+            "threshold": 99,
+            "count_column": "LTE_Attempts",
+            "count_threshold": 100
+        },
+        {
+            "kpi": "LTE Call Drop Rate_OPTIMUM",
+            "operator": "<",
+            "threshold": 0.8,
+            "count_column": "LTE_Drops",
+            "count_threshold": 50
+        },
+        {
+            "kpi": "CSFB Success Rate_OPTIMUM(%)",
+            "operator": ">",
+            "threshold": 99.5,
+            "count_threshold": 0
+        }
+    ]
+}
